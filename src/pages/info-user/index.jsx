@@ -46,7 +46,7 @@ const UserInfoPage = () => {
     const handleSubmitValueForm = async (dataForm) => {
         console.log("dataForm: ", dataForm);
         try {
-            await userService.editUser({ ...dataForm, maNhom: "GP00" });
+            await userService.upDateInfoUser({ ...dataForm, maNhom: "GP00" });
             const resUser = await userService.getInfoUser();
             const updatedUser = resUser.data.content;
             dispatch(setInfoUserAction(updatedUser));
