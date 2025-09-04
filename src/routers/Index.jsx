@@ -27,10 +27,7 @@ const routers = [
             },
             {
                 path: "/detail/:movieID",
-                element:
-                    <AuthCheck isNeedLogin={true}>
-                        <MovieDetailPage />
-                    </AuthCheck>
+                element: <MovieDetailPage />,
             },
             {
                 path: "/ticket/:showTimeID",
